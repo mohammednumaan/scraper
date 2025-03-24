@@ -97,13 +97,17 @@ export class InstagramScraper {
     return data;
   }
   
-  async getReelsByUsername(username: string){
-    const data = await this.profileScraper.getPostsByUsername(username);
-    console.log(data)
-    return data;
-  }
+  // async getReelsByUsername(username: string){
+  //   const data = await this.profileScraper.getPostsByUsername(username);
+  //   console.log(data)
+  //   return data;
+  // }
 };
 
 
 const scraper = new InstagramScraper();
-scraper.getProfileByUserId('5821462185')
+
+// use these methods for scraping (add your own inputs)
+scraper.getProfileByUsername('apple')
+// scraper.getProfileByUserId('5821462185')
+// scraper.getPostByPostId('DHYwUcDRUQC')
